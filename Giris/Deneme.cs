@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Giris
 {
-    internal class KartBogasi:Boga
+    internal interface Deneme
     {
-        internal string yöre;
-       
+        void yürü();
+        void kos();
+      
     }
-
-
 }

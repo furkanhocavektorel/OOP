@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Giris
 {
-    internal class KartBogasi:Boga
+    internal interface IUyu
     {
-        internal string yöre;
-       
+        void uyu();
     }
-
-
 }

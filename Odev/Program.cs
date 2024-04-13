@@ -2,7 +2,6 @@
 {
     internal class Program
     {
-
         static List<Okul> okulList = new List<Okul>();
         static void Main(string[] args)
         {

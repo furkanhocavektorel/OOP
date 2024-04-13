@@ -2,80 +2,76 @@
 {
     internal class Program
     {
-        // public
-        // internal
-        // private
-        // protected
+        /*
+            en üstte 1 interface
+            interface'i implement eden bir class
+            Opsiyonel: bu class'ı da extend eden bir class daha
+         
+         */
+
+
+
+
+
+        /* OOP 
+         1_ encapsulation (kapsülleme) +
+         2_ polimorfizm (çok biçimlilik) +
+         3_ inheritence (kalıtım) +
+         4_ soyutlama (interface & abstract class)
+         */
+       
         static void Main(string[] args)
         {
-            #region 17.03
-            // yazar : 5
-            // yazmaz: 1
-            //boga reu = new boga();
-            //reu._ad = "reu simental";
-            //reu._boy = 150;
-            //reu._kilo = 600;
-            //reu._boynuzuvarmi = false;
-            //reu._rengi = "turuncu";
-            //reu._ayaksayisi = 4;
+            DB d= new DB();
+            string 
+            #region giris
+            // bir boga olusturup liste icine atıcam
+            // 2 adet yöntem var şu ana kadar bildiginiz
+            // 1_ main içinde oluşturmak.
+            // 2_ entity icinde olusturmak.
 
-            //reu.kos(3);
+            //KurtEylemleri kurtEylemleri = new KurtEylemleri();
+            //kurtEylemleri.yürü();
 
-            //Boga karabas = new Boga();
-            //karabas._ad = "karabas jersey";
-            //karabas._kilo = 850;
-            //karabas._boynuzuVarMi = true;
-            //karabas._rengi = "siyah";
-            //karabas._boy = 200;
-            //karabas._cinsi = "simental";
-            //karabas.kos(6);
+            //KartBogasi asda = new KartBogasi();
+            //asda.yöre = "asd";
 
-            //Boga das = new Boga();
-            //das._ad = "boga1";
-            //das.boynuzla();
-
-            //das.kos(3);
-
-
-            //das.boynuzla();
-            //karabas.Yürü();
-            #endregion
-
-            // ******** OOP ********
-            // 1_ Kapsülleme            (encapsulation) 
-            // 2_ kalıtım_miras alma    (inheritence)
-            // 3_ çok biçimlilik        (polimorfizm)
-            // 4_ soyutlama             (abstraction)
-
-            //kopek1.KuyrukVarMi = true;
-
-            //kopek1.setName("faruk");
-            //Console.WriteLine(kopek1.getName());
-            //Console.WriteLine(kopek1.Cinsi);
-            //Console.WriteLine(kopek1.KuyrukVarMi);
-            #region encapsulation 1.asama
             //Kopek k = new Kopek();
-            //k.setName("altin");
-            //k.setSoyad("karabas");
-            //Console.WriteLine(k.getSoyad());
-            //k.KuyrukVarMi = true;
-            //Console.WriteLine(k.KuyrukVarMi);
-            //k.Cinsi = "kangal";
-            //Console.WriteLine(k.Cinsi);
+
+            //Console.WriteLine(asda.yöre);
             #endregion
 
+            Kopek ko = new Kopek();
+            ko._name = "it";
+            ko.setGözRengi("mavi");
+            ko.KuyrukVarMi = true;
+            ko.BiyikUzunlugu = 22;
+            DB.KopekDB.Add(ko);
+           
 
-            // 2.asama
-            // constructor metot(yapıcı metot)
+            KopekEylemleri kopekEylemleri = new KopekEylemleri(ko);
+            kopekEylemleri.yürü();
 
-            Kopek kopek1 = new Kopek(55, 7, 6);
-            Kopek k2 = new Kopek("sarı",50,"kahve");
-            Console.WriteLine(kopek1.getKilo());
-            Console.WriteLine(k2.getTüyRengi());
-            
+            Kedi kedi = new Kedi();
+            kedi.Ad = "lena";
+            kedi.Kilo = 3;
+            kedi.Yas = 1;
+            kedi.Cinsiyet = "disi";
+            kedi.Cins = "ingiliz";
+            KediEylemleri kediEylemleri = new KediEylemleri(kedi);
+            kediEylemleri.yürü();
+            Console.WriteLine(kedi.Yas);
 
+            // 12:25
+       
+          
 
+            DB.KediDB.Add(new Kedi());
+            string 
 
         }
+
+
+
     }
 }

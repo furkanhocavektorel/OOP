@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Giris
 {
-    internal class KartBogasi:Boga
+    internal interface IKurtEylemleri : Deneme
     {
-        internal string yöre;
-       
+        void ulumak();
+        
     }
-
-
 }

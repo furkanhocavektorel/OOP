@@ -11,7 +11,7 @@ namespace Giris
     internal class Kopek
     {
         #region propertys
-        private string _name;
+        public string _name;
         private string _soyad;
         private int kilo;
         private int boy;
@@ -23,8 +23,15 @@ namespace Giris
         public bool KuyrukVarMi { get; set; }
         public int BiyikUzunlugu { get; set; }
         #endregion
+        
 
         //OVERLOADING
+        // constructor
+        // bir bos bir tam dolu olusturulur.
+        public Kopek()
+        {
+            BiyikUzunlugu = 33/100;
+        }
         public Kopek(string xaxasagfdsffg,int kilo,string tüyRengi)
         {
             this._name= xaxasagfdsffg;
@@ -47,7 +54,6 @@ namespace Giris
             this._tüyRengi = tüyRengi;
             this._gözRengi = gözRengi;
         }
-
 
         public void setBoy(int boy)
         {

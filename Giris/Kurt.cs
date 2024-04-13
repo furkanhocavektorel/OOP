@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Giris
 {
-    internal class KartBogasi:Boga
+    internal class Kurt
     {
-        internal string yöre;
-       
+        public string Rengi { get; set; }
+        public bool AlfaMi { get; set; }
     }
-
-
 }
